@@ -1,0 +1,10 @@
+{
+  "isEditing": false,
+  "finishedExecution": true,
+  "currentLineNumber": 5,
+  "currentVariables": [],
+  "currentStack": [],
+  "currentAccumulator": 111,
+  "currentFlags": [false, false, false, false, false, false],
+  "outputLines": ["Output value: 111", "Output value: 111", "Output value: 111"]
+}

@@ -1,0 +1,1 @@
+{"isEditing":false,"finishedExecution":true,"currentLineNumber":20,"currentVariables":[{"name":"iterations","value":8},{"name":"A","value":1},{"name":"B","value":1},{"name":"temp","value":0},{"name":"ctr","value":1}],"currentStack":[],"currentAccumulator":1,"currentFlags":[false,true,true,false,false,false],"outputLines":["Output value: 0"]}
