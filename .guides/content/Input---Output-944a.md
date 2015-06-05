@@ -5,5 +5,6 @@ Write a program that
 1. Outputs the result
 
 {Check it!! | custom}(io)
+
 |||
 

@@ -7,7 +7,7 @@ var router = express.Router();
 
 
 // Play a sound command
-router.get('/c1', function(req, res) {
+router.get('/io', function(req, res) {
   var data = {}
   data.success = true
   data.msg = 'Well done!!'
