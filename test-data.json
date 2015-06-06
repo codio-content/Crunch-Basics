@@ -1,1 +1,19 @@
-{"finishedExecution":true,"currentLineNumber":21,"currentVariables":[{"name":"Number","value":12},{"name":"ctr","value":12},{"name":"Current","value":144}],"currentStack":[],"currentAccumulator":12,"currentFlags":[true,false,false,true,false,true],"outputLines":[12,24,36,48,60,72,84,96,108,120,132,144]}
+{
+  "isEditing": false,
+  "finishedExecution": true,
+  "currentLineNumber": 21,
+  "currentVariables": [{
+    "name": "Number",
+    "value": 2
+  }, {
+    "name": "ctr",
+    "value": 12
+  }, {
+    "name": "Current",
+    "value": 24
+  }],
+  "currentStack": [],
+  "currentAccumulator": 12,
+  "currentFlags": [true, false, false, true, false, true],
+  "outputLines": [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24]
+}

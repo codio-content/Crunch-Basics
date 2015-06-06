@@ -7,12 +7,19 @@ var router = express.Router();
 
 
 // Play a sound command
-router.get('/io', function(req, res) {
-  var data = {}
-  data.success = true
-  data.msg = 'Well done!!'
-  console.log(data)
-  res.send (data)
+router.get('/get-test-data', function(req, res) {
+
+  fs.readFile('/home/codio/workspace/test-data.json', 'utf8', function (err, data) {
+    if (err) {
+      console.log('Cannot access file')
+    }
+    else {
+      console.log('OK:' + data)
+      res.send(data)
+    }
+  })
+  
+  
 });
 
 
