@@ -7,6 +7,10 @@ window.addEventListener('codio-button-custom', function (ev) {
     gId = ev.id
     cProgress('Checking')
     
+    // Remove once tests are done
+    cSuccess('Challenge test checks will be available before June 30th, 2015') 
+    return
+    
     var jqxhr = $.get(window.location.origin + ':9500/get-test-data', function(data, error) {
 
       // 404 Error

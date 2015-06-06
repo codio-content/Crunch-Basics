@@ -3,7 +3,18 @@
   {
    "id": "b67aefde-f797-eedf-e1ef-b069c146609c",
    "title": "Introduction",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/sample.crunch",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Introduction-b67a.md"
@@ -46,7 +57,7 @@
      "action": "open"
     }
    ],
-   "layout": "2-panels-tree",
+   "layout": "",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Input---Output-944a.md"
