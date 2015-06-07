@@ -1,7 +1,7 @@
-On the left is a sample Crunch program. Feel free to play around with it. It does the following
+On the left is a sample Crunch program. Feel free to play around with it. Try pressing the Run or Step buttons. This program 
 
-- Asks for a number
-- Outputs the 'Times Table' for that number from 1 to 12
+- asks for a number
+- outputs the 'Times Table' for that number from 1 to 12
 
 ## Run mode
 Rather than stepping through, you can also let the program run at full speed by pressing the Run button in the button panel on the right of Crunch.
