@@ -16,7 +16,7 @@ and so on!
 Write a program that implements the Fibonacci sequence. Your code should do the following
 
 1. Input the maximum number of iterations.
-1. The number of iterations should match the number of nubers you output.
+1. The number of iterations should match the number of numbers you output.
 2. Output each number in the sequence to the console.
 
 {Check it!! | custom}(fibonacci)
