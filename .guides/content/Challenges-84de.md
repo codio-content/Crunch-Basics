@@ -1,4 +1,4 @@
-On the following pages you will find a series of challenges. They start off nice and easy and then progressively harder.
+On the following pages you will find a series of challenges. They start off nice and easy and then become  progressively harder.
 
 ## Testing
 On each of the challenge pages you will see a 'Check It!!' button. These will be complete before the end of June 2015. In the meantime you will see a temporary message.
