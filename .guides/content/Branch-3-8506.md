@@ -9,6 +9,8 @@ Write a program that does the following
 
 **Important: ** your code should only output a single value.
 
-{Check it!! | custom}(branch-3)
+When you're done, press the button below.
+
+{Check it!! | custom}(branch-3.crunch)
 
 |||

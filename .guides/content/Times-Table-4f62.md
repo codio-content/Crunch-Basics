@@ -4,7 +4,7 @@
 1. You should validate this in your code
 1. Output a multiplication table for the number intput, up to 12x.
 
-{Check it!! | custom}(times-table)
+{Check it!! | custom}(times-table.crunch)
 
 |||
 

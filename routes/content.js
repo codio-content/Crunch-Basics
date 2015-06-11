@@ -7,14 +7,16 @@ var router = express.Router();
 
 
 // Play a sound command
-router.get('/get-test-data', function(req, res) {
+router.get('/get-crunch-file', function(req, res) {
 
-  fs.readFile('/home/codio/workspace/test-data.json', 'utf8', function (err, data) {
+  console.log('Test:' + req.query.file)
+  
+  fs.readFile('/home/codio/workspace/public/' + req.query.file, 'utf8', function (err, data) {
     if (err) {
       console.log('Cannot access file')
     }
     else {
-      console.log('OK:' + data)
+      console.log('Got file:' + data)
       res.send(data)
     }
   })

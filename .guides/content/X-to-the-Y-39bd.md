@@ -7,4 +7,8 @@ $$
 X^Y
 $$
 
+When you're done, press the button below.
+
+{Check it!! | custom}(x-power-y.crunch)
+
 |||

@@ -19,5 +19,7 @@ Write a program that implements the Fibonacci sequence. Your code should do the 
 1. The number of iterations should match the number of numbers you output.
 2. Output each number in the sequence to the console.
 
-{Check it!! | custom}(fibonacci)
+When you're done, press the button below.
+
+{Check it!! | custom}(fibonacci.crunch)
 |||

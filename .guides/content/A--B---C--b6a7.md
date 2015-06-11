@@ -5,6 +5,8 @@ $$
 result = A*(B + C)
 $$
 
-{Check it!! | custom}(abc)
+When you're done, press the button below.
+
+{Check it!! | custom}(abc.crunch)
 
 |||

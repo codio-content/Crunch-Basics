@@ -20,6 +20,8 @@ Your program does not have to cater for invalid values, although you can validat
 
 If the validation fails, output `-1`.
 
-{Check it!! | custom}(10-div-2)
+When you're done, press the button below.
+
+{Check it!! | custom}(10-div-2.crunch)
 
 |||

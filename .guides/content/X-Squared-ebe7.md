@@ -6,8 +6,10 @@ $$
 x^2
 $$
 
-for x=1 to 10.
+for the values x=1 to 10.
 
-{Check it!! | custom}(x2)
+When you're done, press the button below.
+
+{Check it!! | custom}(x2.crunch)
 
 |||

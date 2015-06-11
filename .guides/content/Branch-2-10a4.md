@@ -6,6 +6,8 @@ Write a program that does the following
 1. If the result is greater than 20 output 1
 1. Otherwise output 0
 
-{Check it!! | custom}(branch-2)
+When you're done, press the button below.
+
+{Check it!! | custom}(branch-2.crunch)
 
 |||
