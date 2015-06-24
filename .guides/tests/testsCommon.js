@@ -2,7 +2,7 @@ var TESTS = {
   RESULT_BUTTON_ID: null,
   
   CommonTest: function(result, successCallback) {
-    switch (exitCode) {
+    switch (result.exitCode) {
       case 0:
         successCallback();
         break;

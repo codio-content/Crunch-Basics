@@ -7,7 +7,7 @@ window.addEventListener('codio-button-custom', function (ev) {
     $.get(window.location.origin + ':9500/get-crunch-file', {'file': ev.cmd}, function(data, error) {
       // 404 Error
       if (data === '404') {
-        TESTS.ShowSysError('Unable to reach server. Please contact support@codio.com');
+        TESTS.ShowSysError('Unable to reach server. Please contact support@codio.com.');
         return;
       }
       
@@ -18,6 +18,9 @@ window.addEventListener('codio-button-custom', function (ev) {
           break;
         case 'add100.crunch':
           t_add100(data);
+          break;
+        case 'x-times-y.crunch':
+          t_xTimesY(data);
           break;
         case '10-div-2.crunch':
           t_10div2(data);
@@ -36,16 +39,12 @@ window.addEventListener('codio-button-custom', function (ev) {
 // Tests
 /////////////////
 
-//
-// io.crunch
-//
-
 function t_io(data) {
   RunCrunch(JSON.parse(data).sourceLines, [23], [], function(res) {
     TESTS.CommonTest(res, function() {
       if (TESTS.CheckOutput(res.outputLines, 1)) {
         if (res.outputLines[0].acc !== 23) {
-          TESTS.ShowFail('We input 23 but your code output ' + res.outputLines[0].acc + ' instead of 23');
+          TESTS.ShowFail('We input 23 but your code output ' + res.outputLines[0].acc + ' instead of 23.');
         } else {
           TESTS.ShowSuccess();
         }
@@ -53,17 +52,13 @@ function t_io(data) {
     });
   });
 }
-
-//
-// add100.crunch
-//
 
 function t_add100(data) {
   RunCrunch(JSON.parse(data).sourceLines, [100], [], function(res) {
     TESTS.CommonTest(res, function() {
       if (TESTS.CheckOutput(res.outputLines, 1)) {
         if (res.outputLines[0].acc !== 200) {
-          TESTS.ShowFail('We input 100 but your code output ' + res.outputLines[0].acc + ' instead of 200');
+          TESTS.ShowFail('We input 100 but your code output ' + res.outputLines[0].acc + ' instead of 200.');
         } else {
           TESTS.ShowSuccess();
         }
@@ -72,16 +67,26 @@ function t_add100(data) {
   });
 }
 
-//
-// add100.crunch
-//
+function t_xTimesY(data) {
+  RunCrunch(JSON.parse(data).sourceLines, [12, 11], [], function(res) {
+    TESTS.CommonTest(res, function() {
+      if (TESTS.CheckOutput(res.outputLines, 1)) {
+        if (res.outputLines[0].acc !== 132) {
+          TESTS.ShowFail('We input 12 and 11 but your code output ' + res.outputLines[0].acc + ' instead of 132.');
+        } else {
+          TESTS.ShowSuccess();
+        }
+      }
+    });
+  });
+}
 
 function t_10div2(data) {
   RunCrunch(JSON.parse(data).sourceLines, [], [{'name': 'X', 'value': 101}, {'name': 'Y', 'value': 4}], function(res) {
     TESTS.CommonTest(res, function() {
       if (TESTS.CheckOutput(res.outputLines, 1)) {
         if (res.outputLines[0].acc !== 25) {
-          TESTS.ShowFail('We input X=101 and Y=4 but your code output ' + res.outputLines[0].acc + ' instead of 25');
+          TESTS.ShowFail('We input X=101 and Y=4 but your code output ' + res.outputLines[0].acc + ' instead of 25.');
         } else {
           TESTS.ShowSuccess();
         }
