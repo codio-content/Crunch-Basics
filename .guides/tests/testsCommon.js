@@ -58,9 +58,9 @@ var TESTS = {
     codio.setButtonValue(TESTS.RESULT_BUTTON_ID, codio.BUTTON_STATE.FAILURE, msg);
   },
   ShowFailWithInputExplanation(inputs, result, expected) {
-    var output = 'We input ' + inp[0];
+    var output = 'We input ' + inputs[0];
     for (var i = 1; i < inputs.length; ++i) {
-      output += ' and ' + inp[i];
+      output += ' and ' + inputs[i];
     }
     output += ' but your code output ' + result + ' instead of ' + expected + '.';
     
