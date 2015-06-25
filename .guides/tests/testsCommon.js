@@ -25,6 +25,9 @@ var TESTS = {
       case 3:
         TESTS.ShowFail('There are not as many input statements in your code as we expected.');
         break;
+      case 4:
+        TESTS.ShowFail('An error occurred during the execution of your program.');
+        break;
     }
   },
   
