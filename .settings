@@ -26,7 +26,7 @@
 ; enter your code-beautifier preferences here...
 
 [guides]
-theme = charcoal
+theme = paper
 ; enter your guides preferences here...
 
 [settings]

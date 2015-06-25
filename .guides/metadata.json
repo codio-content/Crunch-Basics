@@ -14,7 +14,7 @@
      "action": "open"
     }
    ],
-   "layout": "2-panels",
+   "layout": "2-panels-tree",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Introduction-b67a.md"
@@ -34,6 +34,52 @@
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Editing---Running-26b7.md"
+  },
+  {
+   "id": "10d85f92-15e-64af-1d92-bc6f59d4c4ef",
+   "title": "A simple Crunch program",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/tut/i-1.crunch",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/A-simple-Crunch-program-10d8.md"
+  },
+  {
+   "id": "aee07f42-ea78-b292-e73d-3b564292970f",
+   "title": "Trying it out",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Trying-it-out-aee0.md"
+  },
+  {
+   "id": "fc484608-8cd8-a814-d757-7f9f8b907afc",
+   "title": "The Accumulator, INP and OUT",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/tut/i-2.crunch",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/The-Accumulator--INP-and-OUT-fc48.md"
   },
   {
    "id": "84ded523-4b97-ff85-3df1-c9da68b6f9bc",
@@ -118,6 +164,68 @@
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/A--B---C--b6a7.md"
+  },
+  {
+   "id": "43f6a1d2-6ee-3ac9-3a46-3e404f886d90",
+   "title": "Branching",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/tut/i-3.crunch",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Branching-43f6.md"
+  },
+  {
+   "id": "84316993-b388-717b-963e-a1dcddddef7d",
+   "title": "CMP, BEQ etc.",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/CMP--BEQ-etc--8431.md"
+  },
+  {
+   "id": "1df0a9da-9fe8-546a-6d8a-e485ad4863ce",
+   "title": "Letting it sink in",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Letting-it-sink-in-1df0.md"
+  },
+  {
+   "id": "834f809-dfe-795a-c485-f088c080f92c",
+   "title": "JMP - Jumping",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/tut/i-4.crunch",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/JMP---Jumping-834f.md"
+  },
+  {
+   "id": "7f28c5b0-349b-32fd-252f-e239d4b8f54c",
+   "title": "More challenges",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/More-challenges-7f28.md"
   },
   {
    "id": "86b16bae-fdd2-99db-43ee-6e9828004e6d",

@@ -2,7 +2,7 @@
 
 Write a program that divides X by Y and outputs the result to the nearest whole number. 
 
-There is no `DIV` instruction so you will have to figure out a clever way of managing it.
+**You may NOT use the `DIV` instruction** so you will have to figure out a clever way of managing it.
 
 You should create 2 DAT variables 
 

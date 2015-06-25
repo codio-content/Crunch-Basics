@@ -1,3 +1,5 @@
+No hints needed here. This challenge should seem familiar if you read the previous pages.
+
 |||challenge
 Write a program that does the following
 

@@ -1,3 +1,5 @@
+You will need to use a `DAT` variable to store the first input value.
+
 |||challenge
 Write a program that does the following
 
