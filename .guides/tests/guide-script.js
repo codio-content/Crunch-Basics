@@ -40,28 +40,28 @@ window.addEventListener('codio-button-custom', function (ev) {
 
 function t_io(data) {
   RunCrunch(JSON.parse(data).sourceLines, [23], [], function(res) {
-    TESTS.SimpleOutputTest(res, [23], 1, res.outputLines[0].acc, 23);
+    TESTS.SimpleOutputTest(res, [23], 1, 23);
   });
 }
 
 function t_add100(data) {
   var inp = TESTS.GetRandomIntegerArray(1);
   RunCrunch(JSON.parse(data).sourceLines, inp, [], function(res) {
-    TESTS.SimpleOutputTest(res, inp, 1, res.outputLines[0].acc, 100 + inp[0]);
+    TESTS.SimpleOutputTest(res, inp, 1, 100 + inp[0]);
   });
 }
 
 function t_xTimesY(data) {
   var inp = TESTS.GetRandomIntegerArray(2);
   RunCrunch(JSON.parse(data).sourceLines, inp, [], function(res) {
-    TESTS.SimpleOutputTest(res, inp, 1, res.outputLines[0].acc, inp[0] * inp[1]);
+    TESTS.SimpleOutputTest(res, inp, 1, inp[0] * inp[1]);
   });
 }
 
 function t_abc(data) {
   var inp = TESTS.GetRandomIntegerArray(3);
   RunCrunch(JSON.parse(data).sourceLines, [9, 100, 7], [], function(res) {
-    TESTS.SimpleOutputTest(res, inp, 1, res.outputLines[0].acc, inp[0] * (inp[1] + inp[2]));
+    TESTS.SimpleOutputTest(res, inp, 1, inp[0] * (inp[1] + inp[2]));
   });
 }
 
@@ -69,7 +69,7 @@ function t_10div2(data) {
   var inp = TESTS.GetRandomIntegerArray(2);
   var variables = [{name: 'X', value: inp[0]}, {name: 'Y', value: inp[1]}];
   RunCrunch(JSON.parse(data).sourceLines, [], variables, function(res) {
-    TESTS.SimpleOutputTest(res, variables, 1, res.outputLines[0].acc, Math.floor(inp[0] / inp[1]));
+    TESTS.SimpleOutputTest(res, variables, 1, Math.floor(inp[0] / inp[1]));
   });
 }
 

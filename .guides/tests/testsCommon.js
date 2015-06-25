@@ -1,10 +1,11 @@
 var TESTS = {
   RESULT_BUTTON_ID: null,
   
-  SimpleOutputTest: function(crunchData, inp, numOutput, result, expected) {
+  SimpleOutputTest: function(crunchData, inp, numOutput, expected) {
     switch (crunchData.exitCode) {
       case 0:
         if (TESTS.CheckOutput(crunchData.outputLines, numOutput)) {
+          var result = crunchData.outputLines[0].acc;
           if (result !== expected) {
             if (typeof inp[0] === 'Number') {
               TESTS.ShowFailWithInputExplanation(inp, result, expected);
