@@ -22,6 +22,9 @@ window.addEventListener('codio-button-custom', function (ev) {
         case 'x-times-y.crunch':
           t_xTimesY(data);
           break;
+        case 'abc.crunch':
+          t_abc(data);
+          break;
         case '10-div-2.crunch':
           t_10div2(data);
           break;
@@ -35,63 +38,38 @@ window.addEventListener('codio-button-custom', function (ev) {
   }
 });
 
-/////////////////
-// Tests
-/////////////////
-
 function t_io(data) {
   RunCrunch(JSON.parse(data).sourceLines, [23], [], function(res) {
-    TESTS.CommonTest(res, function() {
-      if (TESTS.CheckOutput(res.outputLines, 1)) {
-        if (res.outputLines[0].acc !== 23) {
-          TESTS.ShowFail('We input 23 but your code output ' + res.outputLines[0].acc + ' instead of 23.');
-        } else {
-          TESTS.ShowSuccess();
-        }
-      }
-    });
+    TESTS.SimpleOutputTest(res, [23], 1, res.outputLines[0].acc, 23);
   });
 }
 
 function t_add100(data) {
-  RunCrunch(JSON.parse(data).sourceLines, [100], [], function(res) {
-    TESTS.CommonTest(res, function() {
-      if (TESTS.CheckOutput(res.outputLines, 1)) {
-        if (res.outputLines[0].acc !== 200) {
-          TESTS.ShowFail('We input 100 but your code output ' + res.outputLines[0].acc + ' instead of 200.');
-        } else {
-          TESTS.ShowSuccess();
-        }
-      }
-    });
+  var inp = TESTS.GetRandomIntegerArray(1);
+  RunCrunch(JSON.parse(data).sourceLines, inp, [], function(res) {
+    TESTS.SimpleOutputTest(res, inp, 1, res.outputLines[0].acc, 100 + inp[0]);
   });
 }
 
 function t_xTimesY(data) {
-  RunCrunch(JSON.parse(data).sourceLines, [12, 11], [], function(res) {
-    TESTS.CommonTest(res, function() {
-      if (TESTS.CheckOutput(res.outputLines, 1)) {
-        if (res.outputLines[0].acc !== 132) {
-          TESTS.ShowFail('We input 12 and 11 but your code output ' + res.outputLines[0].acc + ' instead of 132.');
-        } else {
-          TESTS.ShowSuccess();
-        }
-      }
-    });
+  var inp = TESTS.GetRandomIntegerArray(2);
+  RunCrunch(JSON.parse(data).sourceLines, inp, [], function(res) {
+    TESTS.SimpleOutputTest(res, inp, 1, res.outputLines[0].acc, inp[0] * inp[1]);
+  });
+}
+
+function t_abc(data) {
+  var inp = TESTS.GetRandomIntegerArray(3);
+  RunCrunch(JSON.parse(data).sourceLines, [9, 100, 7], [], function(res) {
+    TESTS.SimpleOutputTest(res, inp, 1, res.outputLines[0].acc, inp[0] * (inp[1] + inp[2]));
   });
 }
 
 function t_10div2(data) {
-  RunCrunch(JSON.parse(data).sourceLines, [], [{'name': 'X', 'value': 101}, {'name': 'Y', 'value': 4}], function(res) {
-    TESTS.CommonTest(res, function() {
-      if (TESTS.CheckOutput(res.outputLines, 1)) {
-        if (res.outputLines[0].acc !== 25) {
-          TESTS.ShowFail('We input X=101 and Y=4 but your code output ' + res.outputLines[0].acc + ' instead of 25.');
-        } else {
-          TESTS.ShowSuccess();
-        }
-      }
-    });
+  var inp = TESTS.GetRandomIntegerArray(2);
+  var variables = [{name: 'X', value: inp[0]}, {name: 'Y', value: inp[1]}];
+  RunCrunch(JSON.parse(data).sourceLines, [], variables, function(res) {
+    TESTS.SimpleOutputTest(res, variables, 1, res.outputLines[0].acc, Math.floor(inp[0] / inp[1]));
   });
 }
 

@@ -1,10 +1,20 @@
 var TESTS = {
   RESULT_BUTTON_ID: null,
   
-  CommonTest: function(result, successCallback) {
-    switch (result.exitCode) {
+  SimpleOutputTest: function(crunchData, inp, numOutput, result, expected) {
+    switch (crunchData.exitCode) {
       case 0:
-        successCallback();
+        if (TESTS.CheckOutput(crunchData.outputLines, numOutput)) {
+          if (result !== expected) {
+            if (typeof inp[0] === 'Number') {
+              TESTS.ShowFailWithInputExplanation(inp, result, expected);
+            } else {
+              TESTS.ShowFailWithVariableExplanation(inp, result, expected);
+            }
+          } else {
+            TESTS.ShowSuccess();
+          }
+        }
         break;
       case 1:
         TESTS.ShowFail('Unable to set the required DAT variables. Have you added them?');
@@ -29,11 +39,37 @@ var TESTS = {
     return false;
   },
   
+  GetRandomIntegerArray: function(length) {
+    var result = [];
+    for (var i = 0; i < length; ++i) {
+      result.push(Math.floor(Math.random() * 1000));
+    }
+    return result;
+  },
+  
   ShowSuccess(msg) {
     codio.setButtonValue(TESTS.RESULT_BUTTON_ID, codio.BUTTON_STATE.SUCCESS, msg || 'Well done!!');
   },
   ShowFail(msg) {
     codio.setButtonValue(TESTS.RESULT_BUTTON_ID, codio.BUTTON_STATE.FAILURE, msg);
+  },
+  ShowFailWithInputExplanation(inputs, result, expected) {
+    var output = 'We input ' + inp[0];
+    for (var i = 1; i < inputs.length; ++i) {
+      output += ' and ' + inp[i];
+    }
+    output += ' but your code output ' + result + ' instead of ' + expected + '.';
+    
+    codio.setButtonValue(TESTS.RESULT_BUTTON_ID, codio.BUTTON_STATE.FAILURE, output);
+  },
+  ShowFailWithVariableExplanation(variables, result, expected) {
+    var output = 'We set variable ' + variable[0].name + ' to ' + variable[0].value;
+    for (var i = 1; i < variables.length; ++i) {
+      output += ' and variable ' + variable[i].name + ' to ' + variable[i].value;
+    }
+    output += ' but your code output ' + result + ' instead of ' + expected + '.';
+    
+    codio.setButtonValue(TESTS.RESULT_BUTTON_ID, codio.BUTTON_STATE.FAILURE, output);
   },
   ShowSysError(msg) {
     codio.setButtonValue(TESTS.RESULT_BUTTON_ID, codio.BUTTON_STATE.INVALID, msg);
