@@ -67,9 +67,9 @@ var TESTS = {
     codio.setButtonValue(TESTS.RESULT_BUTTON_ID, codio.BUTTON_STATE.FAILURE, output);
   },
   ShowFailWithVariableExplanation(variables, result, expected) {
-    var output = 'We set variable ' + variable[0].name + ' to ' + variable[0].value;
+    var output = 'We set variable ' + variables[0].name + ' to ' + variables[0].value;
     for (var i = 1; i < variables.length; ++i) {
-      output += ' and variable ' + variable[i].name + ' to ' + variable[i].value;
+      output += ' and variable ' + variables[i].name + ' to ' + variables[i].value;
     }
     output += ' but your code output ' + result + ' instead of ' + expected + '.';
     
