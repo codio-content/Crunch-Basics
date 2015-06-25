@@ -25,6 +25,9 @@ window.addEventListener('codio-button-custom', function (ev) {
         case 'abc.crunch':
           t_abc(data);
           break;
+        case 'branch-1.crunch':
+          t_branch1(data);
+          break;
         case '10-div-2.crunch':
           t_10div2(data);
           break;
@@ -66,7 +69,14 @@ function t_abc(data) {
   });
 }
 
-function t_10div2(data) {
+function t_branch1(data) {
+  var inp = TESTS.GetRandomIntegerArray(1);
+  RunCrunch(JSON.parse(data).sourceLines, inp, [], function(res) {
+    TESTS.SimpleOutputTest(res, inp, 1, inp[0] > 20 ? 1 : 0);
+  });
+}
+
+function t_10div2(data) { // TODO check there are no DIV instructions
   var inp = TESTS.GetRandomIntegerArray(2);
   if (inp[1] > inp[0]) {
     var temp = inp[0];
