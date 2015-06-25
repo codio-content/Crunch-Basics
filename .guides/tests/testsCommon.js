@@ -7,7 +7,7 @@ var TESTS = {
         if (TESTS.CheckOutput(crunchData.outputLines, numOutput)) {
           var result = crunchData.outputLines[0].acc;
           if (result !== expected) {
-            if (typeof inp[0] === 'Number') {
+            if (typeof inp[0] === 'number') {
               TESTS.ShowFailWithInputExplanation(inp, result, expected);
             } else {
               TESTS.ShowFailWithVariableExplanation(inp, result, expected);
