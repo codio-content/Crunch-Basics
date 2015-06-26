@@ -40,6 +40,12 @@ window.addEventListener('codio-button-custom', function (ev) {
         case 'print-N-to-0.crunch':
           t_printNTo0(data);
           break;
+        case 'times-table.crunch':
+          t_timesTable(data);
+          break;
+        case 'x2.crunch':
+          t_x2(data);
+          break;
         case '10-div-2.crunch':
           t_10div2(data);
           break;
@@ -127,6 +133,14 @@ function t_timesTable(data) {
     expected.push(99);
   }
   TESTS.SimpleOutputTest(data, [inp], [], expected);
+}
+
+function t_x2(data) {
+  if (data.split('instruction: 3').length > 2) {
+    TESTS.ShowFail('You are not allowed to use more than one OUT for this test');
+    return;
+  }
+  TESTS.SimpleOutputTest(data, [], [], [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]);
 }
 
 function t_10div2(data) { // TODO check there are no DIV instructions
