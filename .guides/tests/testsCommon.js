@@ -1,15 +1,18 @@
 var TESTS = {
   RESULT_BUTTON_ID: null,
   
-  SimpleOutputTest: function(crunchData, inp, vars, numOutput, expected) {
+  SimpleOutputTest: function(crunchData, inp, vars, expected) {
     RunCrunch(JSON.parse(crunchData).sourceLines, inp, vars, function(res) {
-      if (TESTS.CheckExitCode(res.exitCode) && TESTS.CheckOutput(res.outputLines, numOutput)) {
-        var result = res.outputLines[0].acc;
-        if (result !== expected) {
-          TESTS.ShowFailWithExplanation(inp, vars, result, expected);
-        } else {
-          TESTS.ShowSuccess();
+      var numOutputs = expected.length;
+      var expectedNumOutputs = res.outputLines.length;
+      if (TESTS.CheckExitCode(res.exitCode) && TESTS.CheckOutput(expectedNumOutputs, numOutputs)) {
+        for (var i = 0; i < expectedNumOutputs; ++i) {
+          if (res.outputLines[i].acc !== expected[i]) {
+            TESTS.ShowFailWithExplanation(inp, vars, res.outputLines, expected);
+            return;
+          }
         }
+        TESTS.ShowSuccess();
       }
     });
   },
@@ -34,10 +37,10 @@ var TESTS = {
     return false;
   },
   
-  CheckOutput: function(output, numLines) {
-    if (output.length === 0) {
-      TESTS.ShowFail('We could not find any output.');
-    } else if (output.length > numLines) {
+  CheckOutput: function(expectedNumOutputs, numOutputs) {
+    if (expectedNumOutputs < numOutputs) {
+      TESTS.ShowFail('Less outputs were detected than expected.');
+    } else if (expectedNumOutputs > numOutputs) {
       TESTS.ShowFail('More outputs were detected than expected.');
     } else {
       return true;
@@ -45,13 +48,16 @@ var TESTS = {
     return false;
   },
   
-  GetRandomIntegerArray: function(length, max) {
+  GetRandomIntegerArray: function(length, max, min) {
     var result = [];
     if (!max) {
       max = 100;
     }
+    if (!min) {
+      min = 0;
+    }
     for (var i = 0; i < length; ++i) {
-      result.push(Math.floor(Math.random() * max));
+      result.push(Math.floor(Math.random() * (max - min) + min));
     }
     return result;
   },
@@ -78,7 +84,15 @@ var TESTS = {
       }
       output += '.  ';
     }
-    output += 'Your code output ' + result + ' instead of ' + expected + '.';
+    output += 'Your code output ' + result[0].acc;
+    for (var i = 1; i < result.length; ++i) {
+      output += ' ' + result[i].acc;
+    }
+    output += ' instead of ' + expected[0];
+    for (var i = 1; i < expected.length; ++i) {
+      output += ' ' + expected[i];
+    }
+    ouput += '.';
     
     codio.setButtonValue(TESTS.RESULT_BUTTON_ID, codio.BUTTON_STATE.FAILURE, output);
   },
