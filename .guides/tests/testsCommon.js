@@ -2,9 +2,9 @@ var TESTS = {
   RESULT_BUTTON_ID: null,
   
   SimpleOutputTest: function(crunchData, inp, vars, numOutput, expected) {
-    RunCrunch(JSON.parse(crunchData).sourceLines, inp, vars, function() {
-      if (TESTS.CheckExitCode(crunchData.exitCode) && TESTS.CheckOutput(crunchData.outputLines, numOutput)) {
-        var result = crunchData.outputLines[0].acc;
+    RunCrunch(JSON.parse(crunchData).sourceLines, inp, vars, function(res) {
+      if (TESTS.CheckExitCode(res.exitCode) && TESTS.CheckOutput(res.outputLines, numOutput)) {
+        var result = res.outputLines[0].acc;
         if (result !== expected) {
           TESTS.ShowFailWithExplanation(inp, vars, result, expected);
         } else {
