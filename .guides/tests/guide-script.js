@@ -65,17 +65,17 @@ function t_abc(data) {
 }
 
 function t_branch1(data) {
-  var inp = TESTS.GetRandomIntegerArray(1);
+  var inp = TESTS.GetRandomIntegerArray(1, 20);
   TESTS.SimpleOutputTest(data, inp, [], 1, inp[0] > 20 ? 1 : 0);
 }
 
 function t_branch2(data) {
-  var inp = TESTS.GetRandomIntegerArray(2);
+  var inp = TESTS.GetRandomIntegerArray(2, 20);
   TESTS.SimpleOutputTest(data, inp, [], 1, inp[0] + inp[1] > 20 ? 1 : 0);
 }
 
 function t_10div2(data) { // TODO check there are no DIV instructions
-  var inp = TESTS.GetRandomIntegerArray(2);
+  var inp = TESTS.GetRandomIntegerArray(2, 100000);
   if (inp[1] > inp[0]) {
     var temp = inp[0];
     inp[0] = inp[1];

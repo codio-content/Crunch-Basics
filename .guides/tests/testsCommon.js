@@ -45,10 +45,13 @@ var TESTS = {
     return false;
   },
   
-  GetRandomIntegerArray: function(length) {
+  GetRandomIntegerArray: function(length, max) {
     var result = [];
+    if (!max) {
+      max = 100;
+    }
     for (var i = 0; i < length; ++i) {
-      result.push(Math.floor(Math.random() * 1000));
+      result.push(Math.floor(Math.random() * max));
     }
     return result;
   },
