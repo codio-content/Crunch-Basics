@@ -25,6 +25,4 @@ Make sure you now step through the code so you can see exactly what is happening
 We're now ready to do some challenges!
 
 
-1. `END`
-
 

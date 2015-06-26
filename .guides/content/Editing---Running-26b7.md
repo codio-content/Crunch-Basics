@@ -3,19 +3,18 @@ On the left is a sample Crunch program. Feel free to play around with it. Try pr
 - asks for a number
 - outputs the 'Times Table' for that number from 1 to 12
 
-## Run mode
-Rather than stepping through, you can also let the program run at full speed by pressing the Run button in the button panel on the right of Crunch.
-
-You can do this directly from edit mode or when already stepping (explained below) through the code.
-
 ## Debug / Step mode
-One of the really nice features of Crunch is the ability to step through the code at your own speed to see how the code is executing line by line.
+One of the really nice features of Crunch is the ability to execute your code one line at a time. You click a button each time you want Crunch to execute the next line so you can see exactly how your code runs. 
 
 - Press the Step button and it will start to execute the code. 
 - You can continue to press Step to execute each instruction in turn. 
 - Inspect the `DAT` memory locations to see how they change during the lifetime of the program.
 - Press Stop at any time to return to edit mode.
 
+## Run mode
+Rather than stepping through, you can also let the program run at full speed by pressing the Run button in the button panel on the right of Crunch.
+
+You can do this directly from edit mode or when already stepping (explained below) through the code.
 
 ## Edit Mode
 You can edit your code from the main edit screen. If you see a Stop button enabled, then press it to return to edit mode.
