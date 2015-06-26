@@ -31,6 +31,9 @@ window.addEventListener('codio-button-custom', function (ev) {
         case 'branch-2.crunch':
           t_branch2(data);
           break;
+        case 'branch-3.crunch':
+          t_branch3(data);
+          break;
         case '10-div-2.crunch':
           t_10div2(data);
           break;
@@ -74,14 +77,25 @@ function t_branch2(data) {
   TESTS.SimpleOutputTest(data, inp, [], 1, inp[0] + inp[1] > 20 ? 1 : 0);
 }
 
-function t_10div2(data) { // TODO check there are no DIV instructions
-  var inp = TESTS.GetRandomIntegerArray(2, 100000);
-  if (inp[1] > inp[0]) {
-    var temp = inp[0];
-    inp[0] = inp[1];
-    inp[1] = temp;
+function t_branch3(data) {
+  var inp = TESTS.GetRandomIntegerArray(1, 40)[0];
+  var expected;
+  if (inp <= 10) {
+    expected = 0;
+  } else if (inp <= 20) {
+    expected = 1;
+  } else if (inp <= 30) {
+    expected = 2;
+  } else {
+    expected = 99;
   }
-  var variables = [{name: 'X', value: inp[0]}, {name: 'Y', value: inp[1]}];
-  TESTS.SimpleOutputTest(data, [], variables, 1, Math.floor(inp[0] / inp[1]));
+  TESTS.SimpleOutputTest(data, [], [{name: 'Number', value: inp}], 1, expected);
+}
+
+function t_10div2(data) { // TODO check there are no DIV instructions
+  var inp1 = TESTS.GetRandomIntegerArray(1, 1000)[0];
+  var inp2 = TESTS.GetRandomIntegerArray(1, 50)[0];
+  var variables = [{name: 'X', value: inp1}, {name: 'Y', value: inp2}];
+  TESTS.SimpleOutputTest(data, [], variables, 1, Math.floor(inp1 / inp2));
 }
 
