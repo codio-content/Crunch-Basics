@@ -28,6 +28,9 @@ window.addEventListener('codio-button-custom', function (ev) {
         case 'branch-1.crunch':
           t_branch1(data);
           break;
+        case 'branch-2.crunch':
+          t_branch2(data);
+          break;
         case '10-div-2.crunch':
           t_10div2(data);
           break;
@@ -43,37 +46,32 @@ window.addEventListener('codio-button-custom', function (ev) {
 
 function t_io(data) {
   var inp = TESTS.GetRandomIntegerArray(1);
-  RunCrunch(JSON.parse(data).sourceLines, inp, [], function(res) {
-    TESTS.SimpleOutputTest(res, inp, 1, inp[0]);
-  });
+  TESTS.SimpleOutputTest(data, inp, [], 1, inp[0]);
 }
 
 function t_add100(data) {
   var inp = TESTS.GetRandomIntegerArray(1);
-  RunCrunch(JSON.parse(data).sourceLines, inp, [], function(res) {
-    TESTS.SimpleOutputTest(res, inp, 1, 100 + inp[0]);
-  });
+  TESTS.SimpleOutputTest(data, inp, [], 1, 100 + inp[0]);
 }
 
 function t_xTimesY(data) {
   var inp = TESTS.GetRandomIntegerArray(2);
-  RunCrunch(JSON.parse(data).sourceLines, inp, [], function(res) {
-    TESTS.SimpleOutputTest(res, inp, 1, inp[0] * inp[1]);
-  });
+  TESTS.SimpleOutputTest(data, inp, [], 1, inp[0] * inp[1]);
 }
 
 function t_abc(data) {
   var inp = TESTS.GetRandomIntegerArray(3);
-  RunCrunch(JSON.parse(data).sourceLines, inp, [], function(res) {
-    TESTS.SimpleOutputTest(res, inp, 1, inp[0] * (inp[1] + inp[2]));
-  });
+  TESTS.SimpleOutputTest(data, inp, [], 1, inp[0] * (inp[1] + inp[2]));
 }
 
 function t_branch1(data) {
   var inp = TESTS.GetRandomIntegerArray(1);
-  RunCrunch(JSON.parse(data).sourceLines, inp, [], function(res) {
-    TESTS.SimpleOutputTest(res, inp, 1, inp[0] > 20 ? 1 : 0);
-  });
+  TESTS.SimpleOutputTest(data, inp, [], 1, inp[0] > 20 ? 1 : 0);
+}
+
+function t_branch2(data) {
+  var inp = TESTS.GetRandomIntegerArray(2);
+  TESTS.SimpleOutputTest(data, inp, [], 1, inp[0] + inp[1] > 20 ? 1 : 0);
 }
 
 function t_10div2(data) { // TODO check there are no DIV instructions
@@ -84,8 +82,6 @@ function t_10div2(data) { // TODO check there are no DIV instructions
     inp[1] = temp;
   }
   var variables = [{name: 'X', value: inp[0]}, {name: 'Y', value: inp[1]}];
-  RunCrunch(JSON.parse(data).sourceLines, [], variables, function(res) {
-    TESTS.SimpleOutputTest(res, variables, 1, Math.floor(inp[0] / inp[1]));
-  });
+  TESTS.SimpleOutputTest(data, [], variables, 1, Math.floor(inp[0] / inp[1]));
 }
 

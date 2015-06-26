@@ -1,22 +1,23 @@
 var TESTS = {
   RESULT_BUTTON_ID: null,
   
-  SimpleOutputTest: function(crunchData, inp, numOutput, expected) {
-    switch (crunchData.exitCode) {
-      case 0:
-        if (TESTS.CheckOutput(crunchData.outputLines, numOutput)) {
-          var result = crunchData.outputLines[0].acc;
-          if (result !== expected) {
-            if (typeof inp[0] === 'number') {
-              TESTS.ShowFailWithInputExplanation(inp, result, expected);
-            } else {
-              TESTS.ShowFailWithVariableExplanation(inp, result, expected);
-            }
-          } else {
-            TESTS.ShowSuccess();
-          }
+  SimpleOutputTest: function(crunchData, inp, vars, numOutput, expected) {
+    RunCrunch(JSON.parse(crunchData).sourceLines, inp, vars, function() {
+      if (TESTS.CheckExitCode(crunchData.exitCode) && TESTS.CheckOutput(crunchData.outputLines, numOutput)) {
+        var result = crunchData.outputLines[0].acc;
+        if (result !== expected) {
+          TESTS.ShowFailWithExplanation(inp, vars, result, expected);
+        } else {
+          TESTS.ShowSuccess();
         }
-        break;
+      }
+    });
+  },
+  
+  CheckExitCode: function(exitCode) {
+    switch (exitCode) {
+      case 0:
+        return true;
       case 1:
         TESTS.ShowFail('Unable to set the required DAT variables. Have you added them?');
         break;
@@ -30,6 +31,7 @@ var TESTS = {
         TESTS.ShowFail('An error occurred during the execution of your program.');
         break;
     }
+    return false;
   },
   
   CheckOutput: function(output, numLines) {
@@ -57,21 +59,23 @@ var TESTS = {
   ShowFail(msg) {
     codio.setButtonValue(TESTS.RESULT_BUTTON_ID, codio.BUTTON_STATE.FAILURE, msg);
   },
-  ShowFailWithInputExplanation(inputs, result, expected) {
-    var output = 'We input ' + inputs[0];
-    for (var i = 1; i < inputs.length; ++i) {
-      output += ' and ' + inputs[i];
+  ShowFailWithExplanation(inputs, variables, result, expected) {
+    var output = '';
+    if (inputs.length) {
+      output += 'We input ' + inputs[0];
+      for (var i = 1; i < inputs.length; ++i) {
+        output += ' and ' + inputs[i];
+      }
+      output += '.  ';
     }
-    output += ' but your code output ' + result + ' instead of ' + expected + '.';
-    
-    codio.setButtonValue(TESTS.RESULT_BUTTON_ID, codio.BUTTON_STATE.FAILURE, output);
-  },
-  ShowFailWithVariableExplanation(variables, result, expected) {
-    var output = 'We set variable ' + variables[0].name + ' to ' + variables[0].value;
-    for (var i = 1; i < variables.length; ++i) {
-      output += ' and variable ' + variables[i].name + ' to ' + variables[i].value;
+    if (variables.length) {
+      output += 'We set variable ' + variables[0].name + ' to ' + variables[0].value;
+      for (var i = 1; i < variables.length; ++i) {
+        output += ' and variable ' + variables[i].name + ' to ' + variables[i].value;
+      }
+      output += '.  ';
     }
-    output += ' but your code output ' + result + ' instead of ' + expected + '.';
+    output += 'Your code output ' + result + ' instead of ' + expected + '.';
     
     codio.setButtonValue(TESTS.RESULT_BUTTON_ID, codio.BUTTON_STATE.FAILURE, output);
   },
