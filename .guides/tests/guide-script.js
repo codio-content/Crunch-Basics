@@ -37,6 +37,9 @@ window.addEventListener('codio-button-custom', function (ev) {
         case 'print-0-to-N.crunch':
           t_print0ToN(data);
           break;
+        case 'print-N-to-0.crunch':
+          t_printNTo0(data);
+          break;
         case '10-div-2.crunch':
           t_10div2(data);
           break;
@@ -102,6 +105,28 @@ function t_print0ToN(data) {
     expected.push(i);
   }
   TESTS.SimpleOutputTest(data, inp, [], expected);
+}
+
+function t_printNTo0(data) {
+  var inp = TESTS.GetRandomIntegerArray(1, 20);
+  var expected = [0];
+  for (var i = 1; i <= inp[0]; ++i) {
+    expected.unshift(i);
+  }
+  TESTS.SimpleOutputTest(data, inp, [], expected);
+}
+
+function t_timesTable(data) {
+  var inp = TESTS.GetRandomIntegerArray(1, 16)[0];
+  var expected = [];
+  if (inp <= 12) {
+    for (var i = 1; i <= 12; ++i) {
+      expected.push(i * inp);
+    }
+  } else {
+    expected.push(99);
+  }
+  TESTS.SimpleOutputTest(data, [inp], [], expected);
 }
 
 function t_10div2(data) { // TODO check there are no DIV instructions
