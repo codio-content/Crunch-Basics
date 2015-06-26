@@ -92,7 +92,7 @@ var TESTS = {
     for (var i = 1; i < expected.length; ++i) {
       output += ' ' + expected[i];
     }
-    ouput += '.';
+    output += '.';
     
     codio.setButtonValue(TESTS.RESULT_BUTTON_ID, codio.BUTTON_STATE.FAILURE, output);
   },
