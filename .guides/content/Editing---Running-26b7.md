@@ -14,7 +14,7 @@ One of the really nice features of Crunch is the ability to execute your code on
 ## Run mode
 Rather than stepping through, you can also let the program run at full speed by pressing the Run button in the button panel on the right of Crunch.
 
-You can do this directly from edit mode or when already stepping (explained below) through the code.
+You can do this directly from edit mode or when already stepping through the code.
 
 ## Edit Mode
 You can edit your code from the main edit screen. If you see a Stop button enabled, then press it to return to edit mode.

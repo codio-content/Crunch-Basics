@@ -3,7 +3,7 @@ Crunch has a small set of instructions that manages branching.
 ## CMP
 `CMP` is always used when doing conditional tests. It can be used in one of 2 ways
 
-- `CMP 20` (Accumulator = 20 ?) compares the Accumulator to the literal value 20.
+- `CMP 20` (Accumulator = 20?) compares the Accumulator to the literal value 20.
 - `CMP X` (Accumulator = X? ) compares the Accumulator to the value stored in the memory address `X`.
 
 Step through the code on the left until you get to the `CMP # 20` line. Step past the line so the `BGT Marker1` line is highlighted.
