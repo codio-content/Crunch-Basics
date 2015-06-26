@@ -34,6 +34,9 @@ window.addEventListener('codio-button-custom', function (ev) {
         case 'branch-3.crunch':
           t_branch3(data);
           break;
+        case 'print-0-to-N.crunch':
+          t_print0ToN(data);
+          break;
         case '10-div-2.crunch':
           t_10div2(data);
           break;
@@ -90,6 +93,15 @@ function t_branch3(data) {
     expected = 99;
   }
   TESTS.SimpleOutputTest(data, [], [{name: 'Number', value: inp}], [expected]);
+}
+
+function t_print0ToN(data) {
+  var inp = TESTS.GetRandomIntegerArray(1, 20);
+  var expected = [0];
+  for (var i = 1; i <= inp[0]; ++i) {
+    expected.push(i);
+  }
+  TESTS.SimpleOutputTest(data, inp, [], expected);
 }
 
 function t_10div2(data) { // TODO check there are no DIV instructions
