@@ -1,11 +1,13 @@
 Counters are something you will need to fully understand no matter what programming language you are using.
 
-Take a look at the code on the left hand side. The problem it is trying to solve here is ...
+## Example
+Take a look at the code on the left hand side. It is a very simple example and counts from 1 to 10, outputting each value along the way.
 
-> Calculate N factorial (N x N-1 x N-2 ... 1)
->
-> more formally written as $$ n!=\prod_{k=1}^n k \! $$
+In this very simple case, we are using the Accumulator as a counter. Once it gets to 10, the program terminates.
 
-The code on the left does this for you using a loop and a counter.
+## Step through it
+Step through the code on the left and make sure you see what is happening.
+
+This is the simplest possible example for a counter. However, very rarely can we get away with using the Accumulator as a counter. We'll see on the next page how we use a counter variable instead.
 
 

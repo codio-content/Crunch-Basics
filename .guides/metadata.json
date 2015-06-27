@@ -166,6 +166,25 @@
    "content-file": ".guides/content/A--B---C--b6a7.md"
   },
   {
+   "id": "ebe7c097-4bc8-74ec-da41-ae189a5b64ff",
+   "title": "X Squared",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/x2.crunch",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/X-Squared-ebe7.md"
+  },
+  {
    "id": "43f6a1d2-6ee-3ac9-3a46-3e404f886d90",
    "title": "Branching",
    "files": [
@@ -295,10 +314,48 @@
   {
    "id": "117b3b98-301f-37b7-7df-6b26707ee79e",
    "title": "Loops & Counters",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/tut/i-5.crunch",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Loops---Counters-117b.md"
+  },
+  {
+   "id": "e13ab78d-aa8c-c2a7-7cad-15e39bd7c667",
+   "title": "Another Counter example",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/tut/i-6.crunch",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Another-Counter-example-e13a.md"
+  },
+  {
+   "id": "a0d15fc0-d0be-bffb-5947-fb53c839e3a2",
+   "title": "Threshold Concepts",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Threshold-Concepts-a0d1.md"
   },
   {
    "id": "ec05eba0-3fae-3197-aa67-6fe627b5ac8f",
@@ -356,25 +413,6 @@
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Times-Table-4f62.md"
-  },
-  {
-   "id": "ebe7c097-4bc8-74ec-da41-ae189a5b64ff",
-   "title": "X Squared",
-   "files": [
-    {
-     "path": "#tabs",
-     "action": "close"
-    },
-    {
-     "path": "public/x2.crunch",
-     "panel": 0,
-     "action": "open"
-    }
-   ],
-   "layout": "",
-   "path": [],
-   "type": "markdown",
-   "content-file": ".guides/content/X-Squared-ebe7.md"
   },
   {
    "id": "39bd8f5b-8afc-c7b8-474c-a19a9fc9cad3",
@@ -435,11 +473,11 @@
   },
   {
    "id": "21b0c0dd-563a-1dfb-9b93-136937eb4e51",
-   "title": "N!",
+   "title": "N Factorial",
    "files": [],
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/New-Section-29-21b0.md"
+   "content-file": ".guides/content/N-Factorial-21b0.md"
   }
  ],
  "theme": "paper",

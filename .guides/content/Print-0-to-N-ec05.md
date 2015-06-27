@@ -1,4 +1,4 @@
-This is a simple loop. You will need to use a `DAT` variable to hold a counter variable and one to store the input value.
+This is a simple loop challenge. You can choose whether to use `DAT` variables or manage without. The main thing is that all numbers are output individually.
 
 |||challenge
 Write a program that does the following
