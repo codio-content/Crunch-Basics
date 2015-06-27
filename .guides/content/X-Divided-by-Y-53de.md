@@ -1,6 +1,6 @@
 |||challenge
 
-Write a program that divides X by Y and outputs the result to the nearest whole number. 
+Write a program that divides X by Y and outputs the result rounded down to the nearest whole number. 
 
 **You may NOT use the `DIV` instruction** so you will have to figure out a clever way of managing it.
 

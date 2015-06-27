@@ -424,6 +424,14 @@
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/X-Divided-by-Y-53de.md"
+  },
+  {
+   "id": "117b3b98-301f-37b7-7df-6b26707ee79e",
+   "title": "Loops & Counters",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Loops-Counters-117b.md"
   }
  ],
  "theme": "paper",

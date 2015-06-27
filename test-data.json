@@ -1,1 +1,1 @@
-{"isEditing":false,"finishedExecution":true,"currentLineNumber":1,"currentVariables":[{"name":"X","value":12}],"currentStack":[],"currentAccumulator":25,"currentFlags":[false,false,false,false,false,false],"outputLines":[{"msg":"Sum is","acc":25}]}
+{"isEditing":false,"finishedExecution":1,"currentLineNumber":1,"currentVariables":[{"name":"X","value":0},{"name":"Y","value":0},{"name":"CTR","value":1},{"name":"Val","value":0}],"currentStack":[],"currentAccumulator":-1,"currentFlags":[false,true,true,true,false,false],"outputLines":[{"msg":"","acc":-1}]}
