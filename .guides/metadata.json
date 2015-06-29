@@ -136,7 +136,7 @@
      "action": "close"
     },
     {
-     "path": "public/x-times-y.crunch",
+     "path": "public/xTimesY.crunch",
      "panel": 0,
      "action": "open"
     }
