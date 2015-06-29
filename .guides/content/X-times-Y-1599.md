@@ -11,6 +11,6 @@ Write a program that
 
 When you're done, press the button below.
 
-{Check it!! | custom}(x-times-y.crunch)
+{Check it!! | custom}(xTimesY.crunch)
 
 |||
