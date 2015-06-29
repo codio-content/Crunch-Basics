@@ -16,7 +16,7 @@ So, we would expect Y to be 20.
 
 Now watch the video to see how a CPU would run this program.
 
-<iframe src="https://player.vimeo.com/video/130090893" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/132129678" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Step through the code
 On the left is the same Crunch program we showed in the video.
