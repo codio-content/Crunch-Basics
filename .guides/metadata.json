@@ -28,12 +28,23 @@
    "content-file": ".guides/content/Video-Overview-3844.md"
   },
   {
-   "id": "26b7b95b-91c0-537e-7c3d-272e8bf258c3",
-   "title": "Editing & Running",
-   "files": [],
+   "id": "1d59353a-c2ff-9236-ccd9-83773f7d99e1",
+   "title": "The CPU & Memory Space",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/tut/i-3.crunch",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Editing---Running-26b7.md"
+   "content-file": ".guides/content/The-CPU---Memory-Space-1d59.md"
   },
   {
    "id": "10d85f92-15e-64af-1d92-bc6f59d4c4ef",
@@ -145,6 +156,14 @@
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/X-times-Y-1599.md"
+  },
+  {
+   "id": "a0554751-f6ea-282a-1fa-4079ca898e9a",
+   "title": "Storing data in variables",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Storing-data-in-variables-a055.md"
   },
   {
    "id": "b6a759f3-4aaa-a9cb-8bc4-d4eeb8b7a336",
