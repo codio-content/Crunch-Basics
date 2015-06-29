@@ -1,10 +1,8 @@
-On the following pages you will find a series of challenges. They start off nice and easy and then become  progressively harder.
+On the following pages you will find a series of challenges. They start off nice and easy and then become progressively harder.
+
+Once you're done with these, you can start with Units 2 and 3 to challenge yourself even further.
 
 ## Testing
-On each of the challenge pages you will see a 'Check It!!' button. These will be complete before the end of June 2015. In the meantime you will see a temporary message.
+On each of the challenge pages you will see a Check It!! button.
 
-When Codio releases its Teacher Support functionality, where teachers can monitor student progress, then results of these tests will feed through automatically into the Teacher Dashboard.
-
-## More challenges to come
-We will be adding a set of intermediate and advanced Crunch challenges which we will add to the Crunch course.
-
+Pressing this will have Codio check your code and see if you have the correct solution.

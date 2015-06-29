@@ -1,3 +1,5 @@
+Lets start simple and use the `INP` and `OUT` instructions.
+
 |||challenge
 Write a program that 
 
