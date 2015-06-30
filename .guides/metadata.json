@@ -139,6 +139,21 @@
    "content-file": ".guides/content/Add-100-fd71.md"
   },
   {
+   "id": "a0554751-f6ea-282a-1fa-4079ca898e9a",
+   "title": "Storing data in variables",
+   "files": [
+    {
+     "path": "public/tut/i-3.crunch",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Storing-data-in-variables-a055.md"
+  },
+  {
    "id": "159932ba-addd-30ea-3061-5d23a459ddd",
    "title": "X times Y",
    "files": [
@@ -156,14 +171,6 @@
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/X-times-Y-1599.md"
-  },
-  {
-   "id": "a0554751-f6ea-282a-1fa-4079ca898e9a",
-   "title": "Storing data in variables",
-   "files": [],
-   "path": [],
-   "type": "markdown",
-   "content-file": ".guides/content/Storing-data-in-variables-a055.md"
   },
   {
    "id": "b6a759f3-4aaa-a9cb-8bc4-d4eeb8b7a336",
