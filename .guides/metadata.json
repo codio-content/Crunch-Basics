@@ -143,6 +143,10 @@
    "title": "Subtraction",
    "files": [
     {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
      "path": "public/sub.crunch",
      "panel": 0,
      "action": "open"
