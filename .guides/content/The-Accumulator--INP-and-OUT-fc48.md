@@ -27,9 +27,9 @@ Input a value of '9' for the second `INP` prompt. Do you see how the previous Ac
 
 ![](.guides/img/io/4.png)
 
-The `OUT` instuction tell the CPU to output the value stored in the Accumulator with some additional text `Sum is`.
+The `OUT` instruction tells the CPU to output the value stored in the Accumulator with some additional text `Sum is`.
 
-Lastly the `END` insteuction tell the CPU to stop executing the program. 
+Lastly the `END` instruction tells the CPU to stop executing the program. 
 
 Note: A program's `DAT` commands are automatically moved to the bottom of your program.
 

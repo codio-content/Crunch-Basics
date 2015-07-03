@@ -2,7 +2,7 @@
 Help is available directly from within Crunch by clicking the '?' help button.
 
 ## Lexikon
-Codio has an inbuilt lexikon that lets you look up commands and more. Select the Tools->Lexikon menu item to bring up the Lexikon. You shoudl then select 'Crunch' from the dropdown on the right hand side. 
+Codio has an inbuilt lexikon that lets you look up commands and more. Select the `Tools->Lexikon` menu item to bring up the Lexikon. You should then select 'Crunch' from the dropdown on the right hand side. 
 
 - Try searching for 'overview' to get a quick overview of all instructions.
 - For information on a specific command, type the name of the command or a few characters to help you find the appropriate command.
