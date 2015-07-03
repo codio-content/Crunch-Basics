@@ -10,6 +10,13 @@ function t_add100(data) {
   });
 }
 
+function t_sub(data) {
+  TESTS.SimpleOutputTest(data, [{min: 0, max: 100}, {name: 'myNumber', min: 0, max: 100}], function(inp, vars) {
+    var var0 = vars[0].value;
+    return [inp[0] - var0];
+  });
+}
+
 function t_xTimesY(data) {
   TESTS.SimpleOutputTest(data, [{min: 0, max: 100}, {min: 0, max: 100}], function(inp, vars) {
     return [inp[0] * inp[1]];

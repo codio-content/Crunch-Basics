@@ -25,7 +25,7 @@
    "files": [],
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Video-Overview-3844.md"
+   "content-file": ".guides/content/Help---Video-Overview-3844.md"
   },
   {
    "id": "1d59353a-c2ff-9236-ccd9-83773f7d99e1",
@@ -121,7 +121,7 @@
   },
   {
    "id": "fd71da92-1c75-7468-7c84-b8be77e55539",
-   "title": "Add 100",
+   "title": "Addition",
    "files": [
     {
      "path": "#tabs",
@@ -136,7 +136,22 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Add-100-fd71.md"
+   "content-file": ".guides/content/Addition-fd71.md"
+  },
+  {
+   "id": "49288561-e9ce-ef35-8718-de1f107c3a64",
+   "title": "Subtraction",
+   "files": [
+    {
+     "path": "public/sub.crunch",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Subtraction-4928.md"
   },
   {
    "id": "a0554751-f6ea-282a-1fa-4079ca898e9a",

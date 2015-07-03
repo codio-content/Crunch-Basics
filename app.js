@@ -10,7 +10,6 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 
 var contentRoutes = require('./routes/content');
-var testRoutes = require('./routes/tests');
 
 var port = 9500;
 var app = express();
@@ -32,7 +31,6 @@ app.use(express["static"](path.join(__dirname, 'public')));
 
 
 app.use('/', contentRoutes);
-app.use('/tests/', testRoutes);
 
 
 app.use(function(req, res, next) {

@@ -6,7 +6,6 @@ var express = require('express');
 var router = express.Router();
 
 
-// Play a sound command
 router.get('/get-crunch-file', function(req, res) {
 
   console.log('Test:' + req.query.file)

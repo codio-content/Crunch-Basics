@@ -19,7 +19,7 @@ This shows a very simple Crunch program. You can see both the source code mnemon
 ### Memory Addresses for Instructions
 Each instruction lives in a memory address. In our example, the memory address space starts at `1000` and goes to `1003`. If we had more instructions, the program would use more memory space to store those instructions.
 
-Let's explore what instructions are stored in memory
+Let's explore the instructions used in this simple program
 
 | Address | Instruction Code | Explanation |
 | :- | :- | :- |

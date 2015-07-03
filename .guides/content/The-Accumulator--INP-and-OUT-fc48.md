@@ -4,26 +4,37 @@ An important concept that you need the grasp when dealing with Assembly language
 In a computer's central processing unit (CPU), an accumulator is a register in which intermediate arithmetic and logic results are stored.
 |||
 
-What this really means is that a CPU is incredibly simple, almost stupid!
+What this really means is that a CPU is incredibly simple, almost stupid! In Crunch, the CPU is only able to work with one value, stored in the Accumulator. 
 
-In Crunch, the CPU is only able to work with one single value and this value is stored in the Accumulator. If you want to do something with another value, you have to first store it to a memory location and then later load it back.
+## Our Example
+In our example on the left our program adds 2 numbers together. Let's follow what is going on, step by step by pressing the 'Step' button until the program ends.
+
+The first `INP` instruction prompts the user to enter a number which is then stored in the Accumulator. Let input a value of '2'. Alongside the Accumulator you can see the stack which shows the current instruction.
+ 
+![](.guides/img/io/1.png)
+
+In order to work with another value, the Accumulator has to be saved to a named memory location or `DAT` with the `STA` instruction. 
+
+After executing `STA X` the Accumulator value of '2' has been stored in the named memory location `X` at memory address `2000`. 
+
+![](.guides/img/io/2.png)
+
+Input a value of '9' for the second `INP` prompt. Do you see how the previous Accumulator value of '2' has been replaced with the new input value of '9'?  
+
+![](.guides/img/io/3.png)
+
+`ADD X` instructs the CPU to ADD the value stored in the named memory location `X` at memory address `2000`, to the value stored in the Accumulator resulting in a total of '11'.
+
+![](.guides/img/io/4.png)
+
+The `OUT` instuction tell the CPU to output the value stored in the Accumulator with some additional text `Sum is`.
+
+Lastly the `END` insteuction tell the CPU to stop executing the program. 
+
+Note: A program's `DAT` commands are automatically moved to the bottom of your program.
+
+## Simple but Fast!
 
 What makes CPUs amazing is that fact that it can do these very basic actions unbelievably quickly. Billions of times a second. Suddenly they are rather smart!
 
-## Our Example
-In our example on the left our program adds 2 numbers together. Let's follow what is going on, step by step. Press the 'Step' button and see these steps executing in Crunch.
-
-1. `INP` : the user is prompted to enter a number. This number is stored automatically in the Accumulator.
-1. `STA` : whatever is currently in the Accumulator (the number you entered) is stored to the memory location X (`2000`).
-1. `INP` : the user is prompted to enter another number. We don't need to store this to a memory location.
-1. `ADD X` : the CPU adds the value stored at the `X` memory location to the value currently stored in the Accumulator.
-1. `OUT Sum is` : this outputs the Accumulator value to the console at the bottom of the screen. `Sum is` is just a piece of helper text to give the output value some context.
-1. `END` : this tells the CPU to stop executing the program.
-
-## Debug Mode
-Make sure you now step through the code so you can see exactly what is happening.
-
 We're now ready to do some challenges!
-
-
-
