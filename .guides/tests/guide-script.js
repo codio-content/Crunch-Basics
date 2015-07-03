@@ -29,14 +29,11 @@ function t_abc(data) {
   });
 }
 
-var test = false;
-
 function waitForCrunchScript() {
-  if (!window.CRUNCH_COMMON_LOADED || !test) {
-    test = true;
-    setTimeout(waitForCrunchScript, 100);console.log('waiting');
+  if (!window.CRUNCH_COMMON_LOADED) {
+    setTimeout(waitForCrunchScript, 100);
     return;
-  }console.log('ok loaded');
+  }
   TESTS.SetupButtonTest();
 }
 
