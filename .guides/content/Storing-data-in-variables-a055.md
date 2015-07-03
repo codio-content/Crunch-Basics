@@ -9,7 +9,7 @@ X = 10
 Y = X * 2
 ```
 
-We could actually manage this just using the Acucmulator but take a look at the code on the left to show how you can store data using the `DAT` instruction.
+We could actually manage this just using the Accumulator but take a look at the code on the left to show how you can store data using the `DAT` instruction.
 
 Because Crunch's `MUL` instruction does not allow you to multiply by a literal number, we need to get the number to multiply by from a memory location (`Factor` in the code).
 
