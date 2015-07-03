@@ -9,7 +9,7 @@ $$
 
 Output the result to the display console.
 
-When you're done, press the button below.
+When you're done, run your program and then press the 'Check it' button to see if your solution is correct.
 
 {Check it!! | custom}(abc.crunch)
 

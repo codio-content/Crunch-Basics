@@ -9,7 +9,7 @@ You have been given a program which already has `DAT` memory location called 'my
 
 The `SUB` commands allows you to subtract a number from the Accumulator either from a `DAT` memory location or by supplying the number in the `SUB` instruction. For this challenge you should use the provided memory location 'myNumber'.
 
-When you're done, press the button below.
+When you're done, run your program and then press the 'Check it' button to see if your solution is correct.
 
 {Check it!! | custom}(sub.crunch)
 |||

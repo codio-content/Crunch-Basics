@@ -9,7 +9,8 @@ Write code that does the following
 
 The `ADD` commands allows you to add a number to the Accumulator either from a `DAT` memory location or by supplying the number in the `ADD` instruction. For this challenge you should supply the number directly in the `ADD` instruction.
 
-When you're done, press the button below.
+When you're done, run your program and then press the 'Check it' button to see if your solution is correct.
+
 
 {Check it!! | custom}(add100.crunch)
 |||

@@ -10,9 +10,7 @@ You can press the Step button to step through the code. In Step mode, you can se
 Machine code is the numeric instruction code that the CPU uses. Each CPU machine code instruction has a corresponding text mnemonic.
 
 ## Example
-Take a look at the code below (it's also shown on the left).
-
-This shows a very simple Crunch program. You can see both the source code mnemonics (INP, STA, OUT, END, DAT) and the corresponding machine code instructions (20, 10, 21, 60, 80).
+Take a look at the simple Crunch program program on the left. You can see the source code mnemonics (INP, STA, OUT, END, DAT) and if you press the Run or Step buttons you can see the corresponding machine code instructions (20, 10, 21, 60, 80).
 
 ![](.guides/img/i-1.png)
 
