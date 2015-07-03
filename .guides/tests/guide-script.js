@@ -29,5 +29,13 @@ function t_abc(data) {
   });
 }
 
-TESTS.SetupButtonTest();
+function waitForCrunchScript() {
+  if (!window.CRUNCH_COMMON_LOADED) {
+    setTimeout(waitForCrunchScript, 100);console.log('waiting');
+    return;
+  }console.log('ok loaded');
+  TESTS.SetupButtonTest();
+}
+
+waitForCrunchScript();
 
