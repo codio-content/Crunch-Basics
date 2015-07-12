@@ -1,3 +1,5 @@
+var tests = null;
+
 function t_io(data) {
   tests.SimpleOutputTest(data, [{min: 0, max: 100}], function(inp, vars) {
     return [inp[0]];
@@ -30,10 +32,11 @@ function t_abc(data) {
 }
 
 function waitForCrunchScript() {
-  if (!window.TESTS_COMMON_LOADED) {
+  if (!window.TESTS_COMMON) {
     setTimeout(waitForCrunchScript, 100);
     return;
   }
+  tests = window.TESTS_COMMON;
   tests.SetupButtonTest();
 }
 
