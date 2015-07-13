@@ -26,9 +26,11 @@ function t_xTimesY(data) {
 }
 
 function t_abc(data) {
-  tests.SimpleOutputTest(data, [{min: 0, max: 100}, {min: 0, max: 100}, {min: 0, max: 100}], function(inp, vars) {
-    return [inp[0] * (inp[1] + inp[2])];
-  });
+  tests.SimpleOutputTest(data,
+    [{min: 0, max: 100, name: 'A'}, {min: 0, max: 100, name: 'B'}, {min: 0, max: 100, name: 'C'}],
+    function(inp, vars) {
+      return [vars[0].value * (vars[1].value + vars[2].value)];
+    });
 }
 
 function waitForCrunchScript() {
