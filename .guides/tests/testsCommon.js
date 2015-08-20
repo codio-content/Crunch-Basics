@@ -14,12 +14,12 @@ exports.ERROR_MESSAGE_TOO_LONG = 'Your program took too long to execute.';
 var Output = null;
 
 exports.SimpleOutputTest = function(fileName, inputParams, checkResult) {
+  Output = [];
+  
   var crunchData = GetCrunchData(fileName);
   if (!crunchData) {
     return false;
   }
-
-  Output = [];
 
   for (var i = 0; i < 10; ++i) {
     var inputValues = [];
@@ -43,12 +43,12 @@ exports.SimpleOutputTest = function(fileName, inputParams, checkResult) {
 };
 
 exports.SimpleOutputTestWithInputRange = function(fileName, inputRange, checkResult) {
+  Output = [];
+
   var crunchData = GetCrunchData(fileName);
   if (!crunchData) {
     return false;
   }
-
-  Output = [];
 
   for (var i = 0; i <= inputRange.max - inputRange.min; ++i) {
     if (inputRange.name) {
