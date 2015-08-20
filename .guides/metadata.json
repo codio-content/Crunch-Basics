@@ -17,7 +17,9 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Introduction-b67a.md"
+   "content-file": ".guides/content/Introduction-b67a.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "3844fe0e-d7e-8609-1194-2a781466b383",
@@ -25,7 +27,9 @@
    "files": [],
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Help---Video-Overview-3844.md"
+   "content-file": ".guides/content/Help---Video-Overview-3844.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "1d59353a-c2ff-9236-ccd9-83773f7d99e1",
@@ -44,7 +48,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/The-CPU---Memory-Space-1d59.md"
+   "content-file": ".guides/content/The-CPU---Memory-Space-1d59.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "10d85f92-15e-64af-1d92-bc6f59d4c4ef",
@@ -63,7 +69,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/A-simple-Crunch-program-10d8.md"
+   "content-file": ".guides/content/A-simple-Crunch-program-10d8.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "aee07f42-ea78-b292-e73d-3b564292970f",
@@ -71,7 +79,9 @@
    "files": [],
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Trying-it-out-aee0.md"
+   "content-file": ".guides/content/Trying-it-out-aee0.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "fc484608-8cd8-a814-d757-7f9f8b907afc",
@@ -90,7 +100,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/The-Accumulator--INP-and-OUT-fc48.md"
+   "content-file": ".guides/content/The-Accumulator--INP-and-OUT-fc48.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "84ded523-4b97-ff85-3df1-c9da68b6f9bc",
@@ -98,7 +110,9 @@
    "files": [],
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Challenges-84de.md"
+   "content-file": ".guides/content/Challenges-84de.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "944a307-5fce-7f59-2899-6ac756ada9b6",
@@ -117,7 +131,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Input---Output-944a.md"
+   "content-file": ".guides/content/Input---Output-944a.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "fd71da92-1c75-7468-7c84-b8be77e55539",
@@ -136,7 +152,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Addition-fd71.md"
+   "content-file": ".guides/content/Addition-fd71.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "49288561-e9ce-ef35-8718-de1f107c3a64",
@@ -155,7 +173,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Subtraction-4928.md"
+   "content-file": ".guides/content/Subtraction-4928.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "a0554751-f6ea-282a-1fa-4079ca898e9a",
@@ -170,7 +190,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Storing-data-in-variables-a055.md"
+   "content-file": ".guides/content/Storing-data-in-variables-a055.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "159932ba-addd-30ea-3061-5d23a459ddd",
@@ -189,7 +211,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/X-times-Y-1599.md"
+   "content-file": ".guides/content/X-times-Y-1599.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "b6a759f3-4aaa-a9cb-8bc4-d4eeb8b7a336",
@@ -208,12 +232,15 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/A--B---C--b6a7.md"
+   "content-file": ".guides/content/A--B---C--b6a7.md",
+   "chapter": false,
+   "reset": []
   }
  ],
- "theme": "paper",
+ "theme": "light",
  "scripts": [
   "https://crunch.codio.com/build/testsCommon.min.0.1.0.js",
   ".guides/tests/guide-script.js"
- ]
+ ],
+ "lexikonTopic": "Crunch"
 }

@@ -9,8 +9,7 @@ Write a program that
 1. Multiplies them together
 1. Outputs the result
 
-When you're done, run your program and then press the 'Check it' button to see if your solution is correct.
+When you're done, run your program and then press the 'Check it' button to see if your solution is correct.{Check It!|assessment}(test-599168058)
 
-{Check it!! | custom}(xTimesY.crunch)
 
 |||

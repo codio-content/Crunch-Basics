@@ -11,8 +11,7 @@ Output the result to the display console.
 
 You can test your program by setting the initial values of `A`, `B`, and `C` however you like.
 
-When you're done, run your program and then press the 'Check it' button to see if your solution is correct.
+When you're done, run your program and then press the 'Check it' button to see if your solution is correct.{Check It!|assessment}(test-2775743270)
 
-{Check it!! | custom}(abc.crunch)
 
 |||
