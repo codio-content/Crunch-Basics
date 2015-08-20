@@ -16,7 +16,7 @@ var Output = null;
 exports.SimpleOutputTest = function(fileName, inputParams, checkResult) {
   Output = [];
   
-  var crunchData = GetCrunchData(fileName);
+  var crunchData = exports.GetCrunchData(fileName);
   if (!crunchData) {
     return false;
   }
@@ -45,7 +45,7 @@ exports.SimpleOutputTest = function(fileName, inputParams, checkResult) {
 exports.SimpleOutputTestWithInputRange = function(fileName, inputRange, checkResult) {
   Output = [];
 
-  var crunchData = GetCrunchData(fileName);
+  var crunchData = exports.GetCrunchData(fileName);
   if (!crunchData) {
     return false;
   }
@@ -74,10 +74,10 @@ exports.SimpleOutputTestWithInputRange = function(fileName, inputRange, checkRes
   return true;
 };
 
-var GetCrunchData = function(fileName) {
+exports.GetCrunchData = function(fileName) {
   var data = null;
   try {
-    data = fs.readFileSync(fileName);
+    data = fs.readFileSync(fileName, 'utf8');
   } catch (e) {
     BufferOutput(exports.ERROR_MESSAGE_NO_FILE + e);
   }
@@ -109,7 +109,7 @@ var RunAndCheckOutput = function(crunchData, inp, vars, checkResult) {
       }
     }
   }
-  if (numFailures === numResults) {
+  if (numFailures === numResults || !succeeded) {
     OutputFailWithExplanation(inp, vars, res.outputLines, expectedResult);
     CheckExitCode(res.exitCode);
     succeeded = false;
@@ -202,7 +202,7 @@ var CheckExitCode = function(exitCode) {
   return false;
 };
 
-var CountNumInstructionsOfType = function(data, type) {
+exports.CountNumInstructionsOfType = function(data, type) {
   return data.split('instruction\"\:' + type).length - 1;
 };
 
