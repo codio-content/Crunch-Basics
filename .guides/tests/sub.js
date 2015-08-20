@@ -4,5 +4,6 @@ var ret = tests.SimpleOutputTest('/home/codio/workspace/public/sub.crunch', [{mi
   var var0 = vars[0].value;
   return [inp[0] - var0];
 });
+tests.FlushOutput();
 
 process.exit(!ret);

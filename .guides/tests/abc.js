@@ -6,5 +6,6 @@ var ret = tests.SimpleOutputTest('/home/codio/workspace/public/abc.crunch',
     return [vars[0].value * (vars[1].value + vars[2].value)];
   }
 );
+tests.FlushOutput();
 
 process.exit(!ret);

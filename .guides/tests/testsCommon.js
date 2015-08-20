@@ -11,11 +11,15 @@ exports.ERROR_MESSAGE_TOO_FEW_INP = 'There are not as many input statements in y
 exports.ERROR_MESSAGE_PROGRAM_ERROR = 'An error occurred during the execution of your program.';
 exports.ERROR_MESSAGE_TOO_LONG = 'Your program took too long to execute.';
 
+var Output = null;
+
 exports.SimpleOutputTest = function(fileName, inputParams, checkResult) {
   var crunchData = GetCrunchData(fileName);
   if (!crunchData) {
     return false;
   }
+
+  Output = [];
 
   for (var i = 0; i < 10; ++i) {
     var inputValues = [];
@@ -43,6 +47,8 @@ exports.SimpleOutputTestWithInputRange = function(fileName, inputRange, checkRes
   if (!crunchData) {
     return false;
   }
+
+  Output = [];
 
   for (var i = 0; i <= inputRange.max - inputRange.min; ++i) {
     if (inputRange.name) {
@@ -73,7 +79,7 @@ var GetCrunchData = function(fileName) {
   try {
     data = fs.readFileSync(fileName);
   } catch (e) {
-    Output(exports.ERROR_MESSAGE_NO_FILE + e);
+    BufferOutput(exports.ERROR_MESSAGE_NO_FILE + e);
   }
   return data;
 };
@@ -178,19 +184,19 @@ var CheckExitCode = function(exitCode) {
     case 0:
       return true;
     case 1:
-      Output(exports.ERROR_MESSAGE_NO_VARS);
+      BufferOutput(exports.ERROR_MESSAGE_NO_VARS);
       break;
     case 2:
-      Output(exports.ERROR_MESSAGE_TOO_MANY_INP);
+      BufferOutput(exports.ERROR_MESSAGE_TOO_MANY_INP);
       break;
     case 3:
-      Output(exports.ERROR_MESSAGE_TOO_FEW_INP);
+      BufferOutput(exports.ERROR_MESSAGE_TOO_FEW_INP);
       break;
     case 4:
-      Output(exports.ERROR_MESSAGE_PROGRAM_ERROR);
+      BufferOutput(exports.ERROR_MESSAGE_PROGRAM_ERROR);
       break;
     case 5:
-      Output(exports.ERROR_MESSAGE_TOO_LONG);
+      BufferOutput(exports.ERROR_MESSAGE_TOO_LONG);
       break;
   }
   return false;
@@ -205,11 +211,18 @@ var GetRandomInteger = function(min, max) {
 };
 
 var OutputSuccess = function(msg) {
-  Output('Well done!!');
+  BufferOutput('Well done!!');
 };
 
-var Output = function(msg) {
-  console.log(msg);
+var BufferOutput = function(msg) {
+  Output.push(msg);
+};
+
+exports.FlushOutput = function(index) {
+  index = index || Output.length;
+  for (var i = 0; i < index; ++i) {
+    console.log(Output.pop());
+  }
 };
 
 var OutputFailWithExplanation = function(inputs, variables, result, expected) {
@@ -241,5 +254,5 @@ var OutputFailWithExplanation = function(inputs, variables, result, expected) {
   }
   output += '.';
   
-  Output(output);
+  BufferOutput(output);
 };
