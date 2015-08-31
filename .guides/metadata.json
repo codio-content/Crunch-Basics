@@ -18,7 +18,7 @@
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Introduction-b67a.md",
-   "chapter": false,
+   "chapter": true,
    "reset": []
   },
   {
@@ -108,10 +108,11 @@
    "id": "84ded523-4b97-ff85-3df1-c9da68b6f9bc",
    "title": "Challenges",
    "files": [],
+   "layout": "",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Challenges-84de.md",
-   "chapter": false,
+   "chapter": true,
    "reset": []
   },
   {
