@@ -1,0 +1,82 @@
+[
+ {
+  "type": "test",
+  "taskId": "test-2568921088",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "crunch_add100",
+   "instructions": "Write code that does the following\n\n1. Input a value\n2. Add 100 to it\n3. Output the result\n\nThe `ADD` commands allows you to add a number to the Accumulator either from a `DAT` memory location or by supplying the number in the `ADD` instruction. For this challenge you should supply the number directly in the `ADD` instruction.\n\nWhen you're done, run your program and then press the 'Check it' button to see if your solution is correct.",
+   "command": "nodejs .guides/tests/add100.js",
+   "points": 1
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2775743270",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "crunch_abc",
+   "instructions": "Write a program that contains `DAT` variables called `A`, `B` and `C` and calculates the result of this formula.\n\n$$\nresult = A*(B + C)\n$$\n\nOutput the result to the display console.\n\nYou can test your program by setting the initial values of `A`, `B`, and `C` however you like.\n\nWhen you're done, run your program and then press the 'Check it' button to see if your solution is correct.",
+   "command": "nodejs .guides/tests/abc.js",
+   "points": 1
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3527881593",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "crunch_io",
+   "instructions": "Write a program that \n\n1. Inputs a value\n1. Outputs the same value you input to the display console.\n\nWhen you're done, run your program and then press the 'Check it' button to see if your solution is correct.",
+   "command": "nodejs .guides/tests/io.js",
+   "points": 1
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3949660238",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "crunch_sub",
+   "instructions": "You have been given a program which already has `DAT` memory location called 'myNumber' with a starting value of '50'. Add code to do the following\n\n1. Input a value\n2. Subtract myNumber from it\n3. Output the result\n\nThe `SUB` commands allows you to subtract a number from the Accumulator either from a `DAT` memory location or by supplying the number in the `SUB` instruction. For this challenge you should use the provided memory location 'myNumber'.\n\nWhen you're done, run your program and then press the 'Check it' button to see if your solution is correct.",
+   "command": "nodejs .guides/tests/sub.js",
+   "points": 1
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-599168058",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "crunch_xTimesY",
+   "instructions": "Write a program that \n\n1. Inputs 2 values (using the INP instruction)\n1. Multiplies them together\n1. Outputs the result\n\nWhen you're done, run your program and then press the 'Check it' button to see if your solution is correct.",
+   "command": "nodejs .guides/tests/xTimesY.js",
+   "points": 1
+  }
+ }
+]

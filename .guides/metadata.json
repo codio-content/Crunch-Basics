@@ -19,7 +19,8 @@
    "type": "markdown",
    "content-file": ".guides/content/Introduction-b67a.md",
    "chapter": true,
-   "reset": []
+   "reset": [],
+   "teacherOnly": false
   },
   {
    "id": "3844fe0e-d7e-8609-1194-2a781466b383",
@@ -29,7 +30,8 @@
    "type": "markdown",
    "content-file": ".guides/content/Help---Video-Overview-3844.md",
    "chapter": false,
-   "reset": []
+   "reset": [],
+   "teacherOnly": false
   },
   {
    "id": "1d59353a-c2ff-9236-ccd9-83773f7d99e1",
@@ -50,7 +52,8 @@
    "type": "markdown",
    "content-file": ".guides/content/The-CPU---Memory-Space-1d59.md",
    "chapter": false,
-   "reset": []
+   "reset": [],
+   "teacherOnly": false
   },
   {
    "id": "10d85f92-15e-64af-1d92-bc6f59d4c4ef",
@@ -71,7 +74,8 @@
    "type": "markdown",
    "content-file": ".guides/content/A-simple-Crunch-program-10d8.md",
    "chapter": false,
-   "reset": []
+   "reset": [],
+   "teacherOnly": false
   },
   {
    "id": "aee07f42-ea78-b292-e73d-3b564292970f",
@@ -81,7 +85,8 @@
    "type": "markdown",
    "content-file": ".guides/content/Trying-it-out-aee0.md",
    "chapter": false,
-   "reset": []
+   "reset": [],
+   "teacherOnly": false
   },
   {
    "id": "fc484608-8cd8-a814-d757-7f9f8b907afc",
@@ -102,7 +107,8 @@
    "type": "markdown",
    "content-file": ".guides/content/The-Accumulator--INP-and-OUT-fc48.md",
    "chapter": false,
-   "reset": []
+   "reset": [],
+   "teacherOnly": false
   },
   {
    "id": "84ded523-4b97-ff85-3df1-c9da68b6f9bc",
@@ -113,7 +119,8 @@
    "type": "markdown",
    "content-file": ".guides/content/Challenges-84de.md",
    "chapter": true,
-   "reset": []
+   "reset": [],
+   "teacherOnly": false
   },
   {
    "id": "944a307-5fce-7f59-2899-6ac756ada9b6",
@@ -134,7 +141,8 @@
    "type": "markdown",
    "content-file": ".guides/content/Input---Output-944a.md",
    "chapter": false,
-   "reset": []
+   "reset": [],
+   "teacherOnly": false
   },
   {
    "id": "fd71da92-1c75-7468-7c84-b8be77e55539",
@@ -155,7 +163,8 @@
    "type": "markdown",
    "content-file": ".guides/content/Addition-fd71.md",
    "chapter": false,
-   "reset": []
+   "reset": [],
+   "teacherOnly": false
   },
   {
    "id": "49288561-e9ce-ef35-8718-de1f107c3a64",
@@ -176,7 +185,8 @@
    "type": "markdown",
    "content-file": ".guides/content/Subtraction-4928.md",
    "chapter": false,
-   "reset": []
+   "reset": [],
+   "teacherOnly": false
   },
   {
    "id": "a0554751-f6ea-282a-1fa-4079ca898e9a",
@@ -193,7 +203,8 @@
    "type": "markdown",
    "content-file": ".guides/content/Storing-data-in-variables-a055.md",
    "chapter": false,
-   "reset": []
+   "reset": [],
+   "teacherOnly": false
   },
   {
    "id": "159932ba-addd-30ea-3061-5d23a459ddd",
@@ -214,7 +225,8 @@
    "type": "markdown",
    "content-file": ".guides/content/X-times-Y-1599.md",
    "chapter": false,
-   "reset": []
+   "reset": [],
+   "teacherOnly": false
   },
   {
    "id": "b6a759f3-4aaa-a9cb-8bc4-d4eeb8b7a336",
@@ -235,7 +247,27 @@
    "type": "markdown",
    "content-file": ".guides/content/A--B---C--b6a7.md",
    "chapter": false,
-   "reset": []
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "322c0aa-45e8-aeb1-8949-236d2c9b9659",
+   "title": "Teacher solutions",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel-tree",
+   "path": [
+    "solutions"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/Teacher-solutions-322c.md",
+   "chapter": true,
+   "reset": [],
+   "teacherOnly": true
   }
  ],
  "theme": "light",
