@@ -1,0 +1,94 @@
+{
+ "name": "Crunch-Basics1",
+ "children": [
+  {
+   "title": "Introduction",
+   "id": "b67aefde-f797-eedf-e1ef-b069c146609c",
+   "pageId": "b67aefde-f797-eedf-e1ef-b069c146609c",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Help & Video Overview",
+     "id": "3844fe0e-d7e-8609-1194-2a781466b383",
+     "pageId": "3844fe0e-d7e-8609-1194-2a781466b383",
+     "type": "page"
+    },
+    {
+     "title": "The CPU & Memory Space",
+     "id": "1d59353a-c2ff-9236-ccd9-83773f7d99e1",
+     "pageId": "1d59353a-c2ff-9236-ccd9-83773f7d99e1",
+     "type": "page"
+    },
+    {
+     "title": "A simple Crunch program",
+     "id": "10d85f92-15e-64af-1d92-bc6f59d4c4ef",
+     "pageId": "10d85f92-15e-64af-1d92-bc6f59d4c4ef",
+     "type": "page"
+    },
+    {
+     "title": "Trying it out",
+     "id": "aee07f42-ea78-b292-e73d-3b564292970f",
+     "pageId": "aee07f42-ea78-b292-e73d-3b564292970f",
+     "type": "page"
+    },
+    {
+     "title": "The Accumulator, INP and OUT",
+     "id": "fc484608-8cd8-a814-d757-7f9f8b907afc",
+     "pageId": "fc484608-8cd8-a814-d757-7f9f8b907afc",
+     "type": "page"
+    }
+   ]
+  },
+  {
+   "title": "Challenges",
+   "id": "84ded523-4b97-ff85-3df1-c9da68b6f9bc",
+   "pageId": "84ded523-4b97-ff85-3df1-c9da68b6f9bc",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Input & Output",
+     "id": "944a307-5fce-7f59-2899-6ac756ada9b6",
+     "pageId": "944a307-5fce-7f59-2899-6ac756ada9b6",
+     "type": "page"
+    },
+    {
+     "title": "Addition",
+     "id": "fd71da92-1c75-7468-7c84-b8be77e55539",
+     "pageId": "fd71da92-1c75-7468-7c84-b8be77e55539",
+     "type": "page"
+    },
+    {
+     "title": "Subtraction",
+     "id": "49288561-e9ce-ef35-8718-de1f107c3a64",
+     "pageId": "49288561-e9ce-ef35-8718-de1f107c3a64",
+     "type": "page"
+    },
+    {
+     "title": "Storing data in variables",
+     "id": "a0554751-f6ea-282a-1fa-4079ca898e9a",
+     "pageId": "a0554751-f6ea-282a-1fa-4079ca898e9a",
+     "type": "page"
+    },
+    {
+     "title": "X times Y",
+     "id": "159932ba-addd-30ea-3061-5d23a459ddd",
+     "pageId": "159932ba-addd-30ea-3061-5d23a459ddd",
+     "type": "page"
+    },
+    {
+     "title": "A*(B + C)",
+     "id": "b6a759f3-4aaa-a9cb-8bc4-d4eeb8b7a336",
+     "pageId": "b6a759f3-4aaa-a9cb-8bc4-d4eeb8b7a336",
+     "type": "page"
+    }
+   ]
+  },
+  {
+   "title": "Teacher solutions",
+   "id": "322c0aa-45e8-aeb1-8949-236d2c9b9659",
+   "pageId": "322c0aa-45e8-aeb1-8949-236d2c9b9659",
+   "type": "chapter",
+   "children": []
+  }
+ ]
+}
